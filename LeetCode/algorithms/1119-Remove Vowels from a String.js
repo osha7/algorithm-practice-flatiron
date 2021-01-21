@@ -36,3 +36,9 @@ var removeVowels = function(s) {
     return (newString.join(''))
     
 };
+
+// OR:
+
+// var removeVowels = function(s) {
+//     return [...s].filter(each => !'aeiou'.includes(each)).join('');
+// };
