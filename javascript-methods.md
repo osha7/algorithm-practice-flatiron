@@ -59,3 +59,12 @@
 
     currentValue
     The current element being processed in the array.
+
+# Math.floor()
+
+    let middleIndex = Math.floor(array.length / 2)
+
+# Math.max()
+
+    let candies = [4,2,1,1,2]
+    let maxNum = Math.max(...candies) // output => 4
