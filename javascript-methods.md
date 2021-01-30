@@ -83,3 +83,36 @@
 
     let candies = [4,2,1,1,2]
     let maxNum = Math.max(...candies) // output => 4
+
+# slice() method
+
+    returns a shallow copy of a portion of an array into a new array object
+    const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+
+    console.log(animals.slice(2));
+        // expected output: Array ["camel", "duck", "elephant"]
+
+    console.log(animals.slice(2, 4));
+        // expected output: Array ["camel", "duck"]
+
+# splice() method
+
+    changes the contents of an array by removing or replacing existing elements and/or adding new elements
+
+    let myFish = ['angel', 'clown', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(2, 0, 'drum')
+
+        // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+        // removed is [], no elements removed
+
+    let myFish = ['angel', 'clown', 'drum', 'mandarin', 'sturgeon']
+    let removed = myFish.splice(3, 1)
+
+        // myFish is ["angel", "clown", "drum", "sturgeon"]
+        // removed is ["mandarin"]
+
+    let myFish = ['angel', 'clown', 'drum', 'sturgeon']
+    let removed = myFish.splice(2, 1, 'trumpet')
+
+        // myFish is ["angel", "clown", "trumpet", "sturgeon"]
+        // removed is ["drum"]
