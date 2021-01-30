@@ -13,6 +13,13 @@
         return b - a;
     }
 
+    ALPHABETICAL:
+        let array = ["flower", "flow", "flight"]
+        array.sort()          =>      ["flight", "flow", "flower"]
+    BY LENGTH:
+        array.sort((a, b) => a.length - b.length)
+        ["flow", "flight", "flower"]
+
 # .slice()
 
     var new_arr = arr.slice(2);
@@ -59,6 +66,14 @@
 
     currentValue
     The current element being processed in the array.
+
+# substring()
+
+    **** extracts the characters in a string between "start" and "end", includes "start", does not include "end" ***
+    var str = "Hello world!";
+    var res = str.substring(1, 4);        =>  res = "ell"
+    const str = 'Mozilla'
+    console.log(str.substring(2));        =>  "zilla"
 
 # Math.floor()
 
