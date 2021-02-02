@@ -24,10 +24,10 @@
 
 // solutions:
 
-/**
- * @param {string[]} strs
- * @return {string}
- */
+// /**
+//  * @param {string[]} strs
+//  * @return {string}
+//  */
 // var longestCommonPrefix = function(strs) {
 //     let prefix = ""
 //     if (strs.length === 0) return prefix
@@ -40,6 +40,8 @@
 //     }
 //     return prefix
 // };
+
+// let strs = ["flower","flow","flight"]
 
 var longestCommonPrefix = function(strs) {
     strs = strs.sort((a, b) => a.length - b.length)
@@ -54,3 +56,5 @@ var longestCommonPrefix = function(strs) {
     }
     return minStr
 }
+
+// longestCommonPrefix(strs = ["flower","flow","flight"])
