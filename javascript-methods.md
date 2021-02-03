@@ -20,18 +20,6 @@
         array.sort((a, b) => a.length - b.length)
         ["flow", "flight", "flower"]
 
-# .slice()
-
-    var new_arr = arr.slice(2);
-    Output:
-        [23,56,87,32,75,13]
-        [87,32,75,13]
-
-    var new_arr = arr.slice(2,4);
-    Output:
-        [23,56,87,32,75,13]
-        [87,32]
-
 # .forEach()
 
     <!-- BIG 0(n) -->
@@ -84,7 +72,56 @@
     let candies = [4,2,1,1,2]
     let maxNum = Math.max(...candies) // output => 4
 
-# slice() method
+# .substring()
+
+    const str = 'Mozilla';
+
+    console.log(str.substring(1, 3));
+        // expected output: "oz"
+
+    console.log(str.substring(2));
+        // expected output: "zilla"
+
+    let anyString = 'Mozilla'
+
+        // Displays 'M'
+    console.log(anyString.substring(0, 1))
+    console.log(anyString.substring(1, 0))
+
+        // Displays 'Mozill'
+    console.log(anyString.substring(0, 6))
+
+        // Displays 'lla'
+    console.log(anyString.substring(4))
+    console.log(anyString.substring(4, 7))
+    console.log(anyString.substring(7, 4))
+
+        // Displays 'Mozilla'
+    console.log(anyString.substring(0, 7))
+    console.log(anyString.substring(0, 10))
+
+        / Displays 'illa' the last 4 characters
+    let anyString = 'Mozilla'
+    let anyString4 = anyString.substring(anyString.length - 4)
+    console.log(anyString4)
+
+        // Displays 'zilla' the last 5 characters
+    let anyString = 'Mozilla'
+    let anyString5 = anyString.substring(anyString.length - 5)
+    console.log(anyString5)
+
+# .slice() method
+
+    var new_arr = arr.slice(2);
+    Output:
+        [23,56,87,32,75,13]
+        [87,32,75,13]
+
+    var new_arr = arr.slice(2,4);
+    Output:
+        [23,56,87,32,75,13]
+        [87,32]
+
 
     returns a shallow copy of a portion of an array into a new array object
     const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
