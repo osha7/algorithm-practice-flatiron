@@ -1,41 +1,65 @@
-
-
-// findPairsThatAddToSum = (array, sum) => {
-//     let hash = {}
-//     for (let i = 0; i < array.length; i++) {
-//         let element = array[i]
-//         hash[element] = sum - element
-//     }
-// }
-
-let array1 = [1, 2, 3, 9];
-let array2 = [1, 2, 4, 4];
+let array1 = [1, 9, 3, 2];
+let array2 = [4, 2, 4, 1];
 let array3 = [-2, 2, 4, 10];
 
-let sum = 8;
+let sum = 8
 
-// if #'s are SORTED:
-// LINEAR : Big O(n)
-findPairsThatAddToSum = (array, sum) => {
-    let i = 0;
-    let j = array.length - 1;
+// // if #'s are NOT SORTED:
+// // LINEAR : Big O(n)
+findPairThatAddsToSum = (array, sum) => {
+    let hash = {}
 
-    while (i !== j) {
-        if (array[i] + array[j] > sum) {
-            j--;
-        }
-        if (array[i] + array[j] < sum) {
-            i++
-        }
-        if (array[i] + array[j] === sum) {
-            // return ([array[i], array[j]])
+    for (let i = 0; i < array.length; i++) {
+        let element = array[i]
+        let compliment = sum - element
+        console.log(compliment, hash)
+        // console.log(hash[compliment])
+
+        if (hash[compliment] !== undefined) {
+            // return [hash[compliment], i] 
             return true
+        } else {
+            (hash[element] = i)
         }
     }
     // return -1
+    console.log("David", hash)
     return false
-};
-console.log(findPairsThatAddToSum(array1, 8))
+}
+
+console.log(findPairThatAddsToSum(array3, 8))
+
+// let array1 = [1, 2, 3, 9];
+// let array2 = [1, 2, 4, 4];
+// let array3 = [-2, 2, 4, 10];
+
+// let sum = 8;
+
+// // if #'s are SORTED:
+// // LINEAR : Big O(n)
+// findPairThatAddsToSum = (array, sum) => {
+//     let i = 0;
+//     let j = array.length - 1;
+
+//     while (i !== j) {
+//         if (array[i] + array[j] > sum) {
+//             j--;
+//         }
+//         if (array[i] + array[j] < sum) {
+//             i++
+//         }
+//         if (array[i] + array[j] === sum) {
+//             // return ([array[i], array[j]])
+//             return true
+//         }
+//     }
+//     // return -1
+//     return false
+// };
+// console.log(findPairThatAddsToSum(array1, 8))
+
+
+
 // Questions:
 
 // are all elements numbers or could they be floats?
