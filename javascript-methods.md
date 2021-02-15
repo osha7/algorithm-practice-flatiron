@@ -63,16 +63,7 @@
     const str = 'Mozilla'
     console.log(str.substring(2));        =>  "zilla"
 
-# Math.floor()
-
-    let middleIndex = Math.floor(array.length / 2)
-
-# Math.max()
-
-    let candies = [4,2,1,1,2]
-    let maxNum = Math.max(...candies) // output => 4
-
-# .substring()
+# substring()
 
     const str = 'Mozilla';
 
