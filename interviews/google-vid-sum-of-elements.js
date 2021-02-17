@@ -1,3 +1,5 @@
+//https://www.youtube.com/watch?v=XKu_SEDAykw&ab_channel=LifeatGoogle
+
 let array1 = [1, 9, 3, 2];
 let array2 = [4, 2, 4, 1];
 let array3 = [-2, 2, 4, 10];
