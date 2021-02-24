@@ -34,7 +34,7 @@ var search = function(nums, target) {
     let right = nums.length - 1
     
     while (left <= right) {
-        let med = Math.floor((right + left) / 2)
+        let med = Math.ceil((right + left) / 2)
         
         if (nums[med] === target) return med
         
