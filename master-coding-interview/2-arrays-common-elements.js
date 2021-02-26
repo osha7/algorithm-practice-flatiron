@@ -13,12 +13,15 @@ function commonElementsInArrays(array1, array2) {
 
     for (let i = 0; i < array1.length; i++) {
         let element = array1[i]
-        hash[element] = true
+        if (!hash[element]) {
+            hash[element] = true
+        }
     }
 
     for (let j = 0; j < array2.length; j++) {
         let newElement = array2[j]
-        if (hash[newElement] === true) {
+        // if (hash[newElement] === true) {
+        if (hash[newElemnt]) {
             return true
         }
     }
