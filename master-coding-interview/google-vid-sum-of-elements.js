@@ -29,6 +29,20 @@ findPairThatAddsToSum = (array, sum) => {
     return false
 }
 
+// function hasPairWithSum2(arr, sum) {
+//     const mySet = new Set();
+//     const len = arr.length;
+//     for (let i = 0; i < len; i++) {
+//         let element = arr[i]
+//         if (mySet.has(element)) {
+//             return true
+//         }
+//         mySet.add(sum - element);
+//     }
+//     return false;
+// }
+
+
 console.log(findPairThatAddsToSum(array3, 8))
 
 // let array1 = [1, 2, 3, 9];
